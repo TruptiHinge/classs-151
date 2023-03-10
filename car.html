@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="base.js"></script>
+    </head>
+    <body>
+        <a-scene background="color:#000000">
+          <a-assests>
+            <a-asset-item id="car-mtl" src="./models/obj/obj.mtl"></a-asset-item>
+            <a-aaset-item id="car-gltf" src="./models/gltf/car design.glb"></a-aaset-item>
+            <a-asset-item id="car-obj" src="./models/obj/tinker.obj"></a-asset-obj>
+          </a-assests>
+          <a-entity animation="property: position; from: 80 0 0; to: -90; easing:linear; loop: true; dur:20000"></a-entity>
+          <a-entity obj-model="obj: #car-obj; mtl: #car-mtl" position="0 0.5 -10" rotation="-90 90 90" scale="0.1 0.1 0.1"></a-entity>
+        </a-scene>
+    </body>
+</html>
